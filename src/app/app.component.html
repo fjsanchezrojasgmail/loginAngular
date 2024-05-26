@@ -1,0 +1,30 @@
+<div>
+    <nz-header class="main-header" 
+        nz-row nzType="flex" 
+            style="
+                background-color: #003973;
+                justify-content: space-between;
+            ">
+        
+            <div>
+                <a style="color: white; margin-left: 50px; font-size: 18px; font-weight: bolder;"
+                            routerLink="/login">Sell Car Service</a>
+            </div>
+
+            <div class="nav-links">
+
+                 
+                    
+                        <button nz-button [nzType]="'primary'"  
+                            routerLink="/register" routerLinkActive="active">Sign Up</button>
+                 
+                        <button nz-button [nzType]="'primary'" style="margin-left: 5px;"  
+                            routerLink="/login" routerLinkActive="active">Login</button>
+
+
+            </div>
+       
+    </nz-header>
+</div>
+
+<router-outlet></router-outlet>
